@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tracking Hub — Media Program</title>
+
+<link rel="icon" href="https://images-ext-1.discordapp.net/external/RHaB7oX0WamrgQjxce-KMAtKHoBB80PRUfsrlw6fsOI/https/imagedelivery.net/HL_Fwm__tlvUGLZF2p74xw/77a3fffa-acc9-4da6-713a-41c0d69db800/public?format=webp">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+:root {
+    --bg: #ffffff;
+    --card: rgba(255,255,255,0.9);
+    --border: rgba(0,0,0,0.08);
+    --text: #111;
+    --muted: #666;
+    --accent: #5865F2;
+    --danger: #ED4245;
+    --success: #57F287;
+    --warn: #FEE75C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+#particles-js {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    max-width: 720px;
+    width: 100%;
+    background: var(--card);
+    backdrop-filter: blur(18px);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 56px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+    animation: enter 0.7s ease;
+}
+
+@keyframes enter {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--muted);
+}
+
+.section {
+    margin-top: 32px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.rule {
+    display: flex;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+    background: rgba(255,255,255,0.6);
+}
+
+.rule i {
+    margin-top: 3px;
+    color: var(--accent);
+}
+
+.rule.danger i { color: var(--danger); }
+.rule.success i { color: var(--success); }
+.rule.warn i { color: var(--warn); }
+
+.actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.discord-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(88,101,242,0.35);
+    transition: all 0.25s ease;
+}
+
+.discord-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 40px rgba(88,101,242,0.45);
+    background: #4752C4;
+}
+
+.top-discord {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 10;
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<a class="discord-btn top-discord" href="https://discord.gg/trackinghub" target="_blank">
+    <i class="fab fa-discord"></i> Discord
+</a>
+
+<div class="page">
+    <div class="card">
+
+        <div class="header">
+            <h1>Media Program</h1>
+            <p>How to earn and keep Media for Tracking Hub</p>
+        </div>
+
+<div class="section">
+    <div class="section-title">Requirements</div>
+
+    <ul class="requirements">
+        <li>
+            <i class="fa-solid fa-video"></i>
+            <span>
+                Post a video clearly showing <strong>Tracking Hub</strong>.
+                Display the Discord invite at the end.
+            </span>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-repeat"></i>
+            <span>
+                Post content about the tracker <strong>frequently</strong>.
+            </span>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-calendar"></i>
+            <span>
+                Minimum <strong>1 post per week</strong>.
+                2 weeks inactive → Media removed.
+            </span>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-eye"></i>
+            <span>
+                Each video must reach <strong>700+ views</strong>.
+            </span>
+        </li>
+
+        <li class="danger">
+            <i class="fa-solid fa-ban"></i>
+            <span>
+                View botting results in an <strong>instant ban</strong>.
+            </span>
+        </li>
+
+        <li>
+            <i class="fa-solid fa-ticket"></i>
+            <span>
+                After <strong>2–3 videos</strong>, open a ticket to apply.
+            </span>
+        </li>
+    </ul>
+</div>
+
+
+        <div class="section">
+            <div class="section-title">Media Benefits</div>
+
+            <div class="rule success">
+                <i class="fa-solid fa-gem"></i>
+                1 Month Premium.  
+                Stay consistent → <strong>Lifetime Premium</strong>
+            </div>
+
+            <div class="rule">
+                <i class="fa-solid fa-id-badge"></i>
+                Exclusive Media role
+            </div>
+
+            <div class="rule warn">
+                <i class="fa-solid fa-bolt"></i>
+                Media Tracker access (3 Seconds Faster than Premium)
+            </div>
+        </div>
+
+        <div class="actions">
+            <a class="discord-btn" href="https://discord.gg/trackinghub" target="_blank">
+                <i class="fab fa-discord"></i>
+                Apply on Discord
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<script>
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 55 },
+        color: { value: "#000000" },
+        shape: { type: "circle" },
+        opacity: { value: 0.25 },
+        size: { value: 2 },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#000000",
+            opacity: 0.15,
+            width: 1
+        },
+        move: { enable: true, speed: 1 }
+    },
+    interactivity: {
+        events: {
+            onhover: { enable: true, mode: "repulse" }
+        }
+    }
+});
+</script>
+
+</body>
+</html>
